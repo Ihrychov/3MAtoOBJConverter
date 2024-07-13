@@ -20,13 +20,13 @@ HOW TO USE:
 import json
 
 # change the file type of the 3ma file to json and load it as json
-filename_3ma = "C:\\filepath\\filename.json"
+filename_3ma = "C:\Users\anton\Downloads\\filepath\\shotgun.3ma"
 
 file_3ma = open(filename_3ma)
 
 fjile_3ma = json.loads(file_3ma.read())
 
-fout = open("C:\\filepath\\filename.obj","wt")
+fout = open("C:\Users\anton\Downloads\\filepath\\shotgun.obj","TEST")
 
 vertex_index = 0
 prev_vertex_index = vertex_index
@@ -63,6 +63,7 @@ for msh in range(mesh_num):
 
 file_3ma.close()
 fout.close()
+
 
 
 
